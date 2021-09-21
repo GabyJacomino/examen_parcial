@@ -1,0 +1,16 @@
+form {
+    margin-left: 40%;
+    margin-top: 70px;
+}
+
+form div {
+    padding: 6px;
+    background-color: rgb(228, 156, 147);
+    color: rgb(255, 255, 253);
+    width: 50%;
+    text-align: center;
+}
+
+button {
+    background-color: darkgray;
+}

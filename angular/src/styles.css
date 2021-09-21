@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+table {
+    background-color: rgb(255, 255, 255);
+    table-layout: fixed;
+    border: 3px solid rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 4px;
+}
+
+thead th {
+    width: 5%;
+}
+
+tbody {
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgb(159, 153, 185);
+    color: rgb(2, 0, 0);
+    height: 10em;
+}
+
+tbody tr:nth-child(2n-1) {
+    background-color: #2b5780;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: darkgrey;
+}
