@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Numero identificador</th>
+            <th scope="col">Tipo de suministro</th>
+            <th scope="col">Valor Total</th>
+            <th scope="col">Saldo Pendiente</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let contrato of contratos; index as i ">
+            <td>{{ contrato.identificador}}</td>
+            <td>{{contrato.tiposuministro}}</td>
+            <td>{{ contrato.valorcontrato}}</td>
+            <td>{{contrato.saldo }}</td>
+        </tr>
+    </tbody>
+    <hr>
+</table>

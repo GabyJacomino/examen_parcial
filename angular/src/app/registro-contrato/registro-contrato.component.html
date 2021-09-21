@@ -1,19 +1,21 @@
 <form action="">
     <div>
         <label>Numero identificador del contrato</label>
-        <input type="number" id="nombre">
+        <input type="text" name="identificacion" [(ngModel)]="contrato.identificador" />
     </div>
-    <label>sexo</label>
-    <Select id="Tipo de suministro">
-<option value="equipos">Equipos</option>
-<option value="aseo">Productos de Aseo</option>
-<option value="papeleria">Papelería</option>
-</Select>
+    <div>
+        <select name="tiposuministro" [(ngModel)]="contrato.tiposuministro">
+            <option value="equipos ">Equipos</option>
+            <option value="aseo ">Productos de Aseo</option>
+            <option value="papeleria ">Papelería</option>
+            </select>
+    </div>
     <div>
         <label>Valor del Contrato</label>
-        <input type="number" id="valorcontrato">
+        <input type="number " id="valorcontrato " name="valorcontrato" [(ngModel)]="contrato.valorcontrato">
     </div>
+
     <div>
-        <button type="button" onclick="registrar()">Registrar</button>
+        <button type="button " (click)="add() ">Registrar</button>
     </div>
 </form>

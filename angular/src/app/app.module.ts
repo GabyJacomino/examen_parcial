@@ -6,17 +6,26 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './componentes/nav/nav.component';
 import { RegistroInsumosComponent } from './registro-insumos/registro-insumos.component';
 import { RegistroContratoComponent } from './registro-contrato/registro-contrato.component';
+import { ContratoService } from './servicios/contrato.service';
+import { FormsModule } from '@angular/forms';
+import { TContratoComponent } from './componentes/t-contrato/t-contrato.component';
+import { TInsumosComponent } from './t-insumos/t-insumos.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     RegistroInsumosComponent,
-    RegistroContratoComponent
+    RegistroContratoComponent,
+    TContratoComponent,
+    TInsumosComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

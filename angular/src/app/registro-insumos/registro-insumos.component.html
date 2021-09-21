@@ -1,17 +1,17 @@
 <form action="">
     <div>
         <label>Numero identificador del contrato</label>
-        <input type="number" id="nombre">
+        <input type="number" id="nombre" name="identificador" [(ngModel)]="insumo.identificador">
     </div>
     <div>
         <label>Descripcion del producto</label>
-        <input type="number" id="descripcionproducto">
+        <input type="number" id="descripcionproducto" name="prouctosumin" [(ngModel)]="insumo.productosumin">
     </div>
     <div>
         <label>Valor del Producto</label>
-        <input type="number" id="valorproducto">
+        <input type="number" id="valorproducto" name="valorproducto" [(ngModel)]="insumo.valorproducto">
     </div>
     <div>
-        <button type="button" onclick="registrar()">Registrar</button>
+        <button type="button" (click)="add()">Registrar</button>
     </div>
 </form>

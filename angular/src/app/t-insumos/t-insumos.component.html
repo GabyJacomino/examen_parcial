@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Numero identificador</th>
+            <th scope="col">Productos Suministrados</th>
+            <th scope="col">Valor del Producto</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let insumo of insumos; index as i ">
+            <td>{{ insumo.identificador}}</td>
+            <td>{{insumo.productosumin}}</td>
+            <td>{{insumo.valorproducto}}</td>
+
+        </tr>
+    </tbody>
+    <hr>
+</table>
