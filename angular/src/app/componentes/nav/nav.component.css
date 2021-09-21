@@ -1,0 +1,26 @@
+.nav {
+    background-color: cornsilk;
+    height: 40px;
+    overflow: hidden;
+    font-family: cursive;
+    border-radius: 20px;
+}
+
+.nav a {
+    float: left;
+    color: #1c1586;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: rgb(141, 51, 118);
+    color: rgba(200, 216, 210, 0.795);
+}
+
+.nav a.active {
+    background-color: #8851b4;
+    color: rgb(8, 3, 3);
+}
